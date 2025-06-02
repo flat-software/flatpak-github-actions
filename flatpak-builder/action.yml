@@ -38,6 +38,11 @@ inputs:
       The directory to use for building the Flatpak bundle.
     default: "flatpak_app"
     required: false
+  state-dir:
+    description: >
+      The directory to use for storing the state of the build.
+    default: ".flatpak-builder"
+    required: false
   repository-path:
     description: >
       The local path to write the repository to.

@@ -54,6 +54,7 @@ class Configuration {
     this._manifestHash = null
     // Where to build the application
     this.buildDir = core.getInput('build-dir')
+    this.stateDir = core.getInput('state-dir')
     // The flatpak repository name
     this.localRepoName = core.getInput('repository-path')
     // Verbosity
@@ -220,6 +221,7 @@ const build = async (manifest, manifestPath, cacheHitKey, config) => {
 
   const args = [
     `--repo=${config.localRepoName}`,
+    `--state-dir=${config.stateDir}`,
     '--disable-rofiles-fuse',
     `--install-deps-from=${config.repositoryName}`,
     '--force-clean',
