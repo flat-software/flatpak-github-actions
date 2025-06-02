@@ -33,6 +33,11 @@ inputs:
       Note that the repository name corresponds to the `repository-url` mentioned above.
     required: false
     default: "flathub"
+  repository-path:
+    description: >
+      The local path to write the repository to.
+    default: "repo"
+    required: false
   run-tests:
     description: >
       Toggles the run-tests config option on the defined flatpak-module.

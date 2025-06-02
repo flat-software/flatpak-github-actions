@@ -55,7 +55,7 @@ class Configuration {
     // Where to build the application
     this.buildDir = 'flatpak_app'
     // The flatpak repository name
-    this.localRepoName = 'repo'
+    this.localRepoName = core.getInput('repository-path')
     // Verbosity
     this.verbose = core.getBooleanInput('verbose')
     // Upload the artifact
