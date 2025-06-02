@@ -33,6 +33,11 @@ inputs:
       Note that the repository name corresponds to the `repository-url` mentioned above.
     required: false
     default: "flathub"
+  build-dir:
+    description: >
+      The directory to use for building the Flatpak bundle.
+    default: "flatpak_app"
+    required: false
   repository-path:
     description: >
       The local path to write the repository to.

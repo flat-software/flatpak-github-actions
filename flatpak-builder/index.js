@@ -53,7 +53,7 @@ class Configuration {
     // Computed manifest hash
     this._manifestHash = null
     // Where to build the application
-    this.buildDir = 'flatpak_app'
+    this.buildDir = core.getInput('build-dir')
     // The flatpak repository name
     this.localRepoName = core.getInput('repository-path')
     // Verbosity
